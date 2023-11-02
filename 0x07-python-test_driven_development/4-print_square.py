@@ -1,21 +1,21 @@
 #!/usr/bin/python3
-"""Module for say_my_name method."""
+"""Module for print_square method."""
 
 
-def say_my_name(first_name, last_name=""):
-    """Method for printing first and last name.
+def print_square(size):
+    """Method for printing a square with # characters.
 
     Args:
-        first_name: first name string.
-        last_name: last name string.
+        size: The int size of the square's side.
 
     Raises:
-        TypeError: If first_name or last_name are not strings.
+        TypeError: If size is not an int.
+        ValueError: If size is < 0.
     """
-    if not isinstance(first_name, str):
-        raise TypeError("first_name must be a string")
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
 
-    if not isinstance(last_name, str):
-        raise TypeError("last_name must be a string")
+    if size < 0:
+        raise ValueError("size must be >= 0")
 
-    print("My name is {:s} {:s}".format(first_name, last_name))
+    print((("#" * size + "\n") * size), end="")
