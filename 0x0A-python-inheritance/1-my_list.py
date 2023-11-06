@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Defines an inherits from the list class."""
+""" module doc """
 
 
 class MyList(list):
-    """A class that inherits from list."""
+    """ class doc """
 
     def print_sorted(self):
-        """prints a sorted list (ascending sort)."""
-
-        # print(sorted(self))
+        clone = self.copy()
+        clone.sort()
+        print(clone)
