@@ -4,6 +4,6 @@
 
 
 def is_kid_of_class(obj, a_class):
-"""doc"""
+    """doc"""
 
-return isinstance(obj, a_class)
+    return isinstance(obj, a_class)
