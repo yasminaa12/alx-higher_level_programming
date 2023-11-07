@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" baseGeometry """
+""" BaseGeometry """
 
 
-class base geometry :
-    """ class basGeometry """
+class BaseGeometry:
+    """ class BaseGeometry """
 
-    def __init __(self):
+    def __init__(self):
         pass
