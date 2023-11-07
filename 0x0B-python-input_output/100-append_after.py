@@ -3,8 +3,9 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """Inserts text after each line containing a specific given string in a file
-    """
+    """Inserts text after each line containing a specific given string in a file"""
+
+
 
     Text = ""
 
